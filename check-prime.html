@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let n = parseInt(prompt("enter the number"));
+    function checkPrime(n) {
+
+        if (n<2){
+            alert(+n +" is not Prime")
+        }else if(n==2){
+            alert(+n +" is Prime")
+        }else if(n%2 ==0){
+            alert(+n +" is not Prime")
+        }else for (let i =2; i <n; i++){
+            if (n%i==0){
+                alert(+n +" is not Prime");
+            }else
+                alert(+n +" is Prime");
+        }
+    }
+    let checkPrime1 = checkPrime(n)
+    alert(checkPrime1);
+
+</script>
+</body>
+</html>
